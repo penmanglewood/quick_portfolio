@@ -1,0 +1,313 @@
+html
+{
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	color: #434343;
+	font-style: normal;
+	font-weight: 400;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body
+{
+	background-color: #ccc;
+	min-height: 100%;
+}
+
+h1, h2, h3
+{
+	color: #333;
+}
+
+h1 img
+{
+	margin-right: 8px;
+	position: relative;
+	top: 1px;
+}
+
+a
+{
+	text-decoration: none;
+	color: #CC7221;
+}
+
+em
+{
+	font-style: italic;
+}
+
+.container
+{
+	display: block;
+	margin: 0 auto;
+	width: 940px;
+	min-height: 100%;
+	padding: 0;
+	background-color: #fff;
+}
+
+.contents
+{
+	padding: 32px;
+}
+
+.clear
+{
+	clear: both;
+}
+
+#breadcrumbs
+{
+	padding: 0 0 32px 0;
+	color: #778;
+}
+
+#breadcrumbs a
+{
+	font-weight: 400;
+}
+
+#header
+{
+	background: url('../assets/images/hero-bg.jpg');
+}
+
+.headTitle
+{
+	/*
+	display: block;
+	border-left: 10px solid #CC7221;
+	padding-left: 10px;
+	*/
+}
+
+#hero
+{
+	display: block;
+	padding: 16px 0 16px 32px;
+	float: left;
+}
+
+.contact
+{
+	display: block;
+	margin-top: 10px;
+	float: right;
+	padding: 23px 32px 0 0;
+}
+
+.contact p
+{
+	padding-top: 6px;
+	font-weight: 400;
+	color: #C78F5B;
+}
+
+.light-inset
+{
+	text-shadow: 0 1px 2px #212121;
+}
+
+.dark-inset
+{
+	text-shadow: 0 -1px 0 #171717;
+}
+
+.light-emboss
+{
+	text-shadow: 0 -1px 0 #575757;
+}
+
+.dark-emboss
+{
+	text-shadow: 0 -1px 0 #efefef;
+}
+
+#header h1
+{
+	font-weight: bold;
+	font-size: 2.4em;
+}
+
+#header h1 a
+{
+	text-decoration: none;
+	color: #d3d3d3;
+}
+
+#header h2
+{
+	font-size: 2em;
+	font-weight: 400;
+	color: #999091;
+}
+
+/**********
+General
+**********/
+
+.section
+{
+	margin-bottom: 28px;
+}
+
+.contents h1
+{
+	font-size: 2em;
+	font-weight: 500;
+	margin-bottom: 18px;
+}
+
+.contents h2
+{
+	font-size: 1.5em;
+	font-weight: 500;
+	margin-bottom: 14px;
+}
+
+.contents p
+{
+	padding: 0 0 12px 0;
+}
+
+.contents ul
+{
+	padding: 3px 0;
+}
+
+.contents ul li
+{
+	list-style: disc inside;
+}
+
+.contents ul li li
+{
+	list-style: square inside;
+	padding-left: 24px;
+}
+
+#projectTitle
+{
+	display: block;
+	border-left: 10px solid #CC7221;
+	padding-left: 8px; 
+	margin-bottom: 24px;
+}
+
+#projectTitle h2
+{
+	margin: 0;
+}
+
+#projectTitle h3
+{
+	color: #999;
+}
+
+#projectTitle .roles
+{
+	margin: 4px 0 0 0;
+}
+
+.roles ul
+{
+	margin: 7px 0 0 0;
+	font-size: 0.9em;
+	color: #5d5d5d;
+	padding: 0;
+}
+
+.roles ul li
+{
+	list-style-type: square;
+}
+
+
+
+/*********
+Code Projects
+*********/
+
+.codeProject
+{
+	display: block;
+	width: 100%;
+	margin-bottom: 4px;
+	padding: 6px 6px 6px 0;
+}
+
+.codeProject h3
+{
+	font-weight: 600;
+	font-size: 1.1em;
+	margin-bottom: 8px;
+}
+
+/***********
+Interactive
+************/
+
+::-moz-selection ::selection {
+	background: #111;
+	color: #fff;
+	text-shadow: none;
+}
+
+::selection {
+	background: #111;
+	color: #fff;
+	text-shadow: none;
+}
+
+
+/************
+Handheld
+************/
+
+@media screen and (max-width: 35em) {
+	.container
+	{
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		min-height: 100%;
+		padding: 0;
+		background-color: #fff;
+	}
+
+	.contents
+	{
+		padding: 18px;
+	}
+
+	#breadcrumbs
+	{
+		padding: 0 0 16px 0;
+		color: #778;
+	}
+
+	#hero
+	{
+		display: block;
+		float: none;
+		padding: 16px 0 0 18px;
+		margin-bottom: 0;
+	}
+
+	.contact
+	{
+		display: block;
+		float: none;
+		padding: 0 0 16px 18px;
+		margin-top: 4px;
+	}
+
+	.contact p
+	{
+		float: left;
+		margin: 0 12px 10px 0;
+	}
+}

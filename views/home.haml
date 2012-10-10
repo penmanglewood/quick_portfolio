@@ -1,0 +1,19 @@
+-@@content['sections'].each do |section|
+	.section
+		-if section['title']
+			.headTitle
+				%h1{:class => section['title_classes']}
+					-if section['icon']
+						%img{:src => url("/assets/images/#{section['icon']}")}
+					-if section['title']
+						=section['title']
+		-if section['content_path']
+			=render :haml, :"sections/#{section['content_path']}"
+		-if section['links']
+			-section['links'].each do |link|
+				%div{:class => link['container_classes']}
+					%h3{:class => link['link_classes']}
+						%a{:href => url("/#{@@content['settings']['projects_path_name']}/#{link['url']}")} 
+							=link['name']
+					-if link['description']
+						%p=link['description']

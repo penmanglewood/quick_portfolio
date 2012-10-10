@@ -1,0 +1,12 @@
+- if !@project_name.nil?
+	#projectTitle
+		%h2
+			= @project_name
+		- if !@subtitle.nil?
+			%h3
+				= @subtitle
+		- if !@roles.nil?
+			.roles
+				%ul
+					- @roles.each do |r|
+						%li= r
