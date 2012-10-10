@@ -5,12 +5,9 @@
 		%meta{ :name => "viewport", :content => "width=device-width" }
 		%title= @page_title
 		%link(rel="stylesheet" href="http://yui.yahooapis.com/2.8.0r4/build/reset/reset-min.css")
-		%link(rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400" type="text/css")
 		%link(rel="stylesheet" href="/style/main.css" type="text/css")
 		/[if lt IE 9]
 			%script{ :src => '/script/html5shiv.js' }
-		%script{ :src => '//use.typekit.net/omy5taj.js' }
-		%script try{Typekit.load();}catch(e){}
 	%body
 		.container
 			= render :haml, :header
