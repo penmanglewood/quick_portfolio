@@ -1,9 +1,10 @@
 #header
 	#hero
-		%h1{:class => @@content['settings']['user_name_classes']}
-			%a{:href => url('/')}= @@content['user']['name']
-		%h2{:class => @@content['settings']['title_classes']}=@@content['settings']['title']
-	.contact{:class => @@content['settings']['contact_info_classes']}
-		%p= @@content['user']['email']
-		%p= @@content['user']['phone']
+		%h1{:class => @@content['settings']['title_classes']}
+			%a{:href => url('/')}= @@content['settings']['title']
+		%h2{:class => @@content['settings']['title_classes']}=@@content['settings']['subtitle']
+	- if @@content['settings']['info_1']
+		.contact{:class => @@content['settings']['info_classes']}
+			%p= @@content['settings']['info_1']
+			%p= @@content['settings']['info_2'] if @@content['settings']['info_2']
 	.clear

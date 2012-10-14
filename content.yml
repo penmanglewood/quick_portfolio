@@ -1,12 +1,10 @@
 settings:
   home_page_title: 'Your Portfolio : Home'
-  title: 'portfolio'
+  title: 'Your Name'
+  subtitle: 'portfolio'
+  info_1: 'your email'
+  info_2: 'your phone'
   projects_path_name: 'projects'
-
-user:
-  name: Your Name
-  phone: 555-123-4567
-  email: you@email.com
 
 sections:
   -
@@ -20,5 +18,5 @@ sections:
         url: 'some-project'
         name: 'Acme Corp'
         container_classes: 'codeProject'
-        subtitle: 'Something great I did'
         description: 'A whizbang thingamabob whirlygig.'
+        subtitle: 'Something great I did'

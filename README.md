@@ -1,8 +1,8 @@
 #Quick Portfolio
 
-Use Quick Portfolio to create a simple website of links and pages in just minutes. It's ideal for online portfolios or any site that has a flat hierarchy of pages (that may or may not be) grouped into sections. 
+Use Quick Portfolio to get a simple website up on Heroku in minutes. It's ideal for online portfolios or any site that has one main page with or without subpages.
 
-It is a lightweight Sinatra application that is designed to be quickly authored and put up on Heroku.  
+It's a boilerplate Sinatra application, so although you can be up and running quickly with minimal coding, the full power of Sinatra is available if you need to extend the application.  
 &nbsp;&nbsp;
 ##Getting Started
 
@@ -20,3 +20,6 @@ A section may have content associated with it, especially when it doesn't have l
 
 ###Step 5: Create link pages
 For each link specified in content.yml, create a haml file for the link's <em>url</em> in the links directory.
+
+###Step 6: Push to Heroku
+Commit your changes, then run ```heroku create```, and ```git push heroku master```.
