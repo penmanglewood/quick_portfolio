@@ -13,7 +13,7 @@ Clone or [download](https://github.com/penmanglewood/quick_portfolio/zipball/mas
 If using bundler, run ```bundle install```. If not, install the gems listed in the Gemfile.
 
 ###Step 3: Configure content.yml
-content.yml is where the app settings are defined, and where the sections and links are listed out. Open content.yml and customize to your needs.
+content.yml is where the app settings are defined, and where the sections and links are listed out. Read the guide to [understanding content.yml](https://github.com/penmanglewood/quick_portfolio/wiki/Understanding-content.yml "Understanding content.yml"). Open content.yml and customize to your needs.
 
 ###Step 4: Create section content (optional)
 A section may have content associated with it, especially when it doesn't have links or when it requires explanation. For each section specified in content.yml, if its <em>content_path</em> property is set, create a haml file for it in the views/sections directory.
