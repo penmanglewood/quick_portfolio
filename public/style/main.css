@@ -54,6 +54,10 @@ em
 	padding: 32px;
 }
 
+.contents img {
+	margin-bottom: 8px;
+}
+
 .clear
 {
 	clear: both;
