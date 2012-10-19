@@ -21,5 +21,8 @@ A section may have content associated with it, especially when it doesn't have l
 ###Step 5: Create link pages
 For each link specified in content.yml, create a haml file for the link's <em>url</em> in the links directory.
 
-###Step 6: Push to Heroku
+###Step 6: Run application
+Use ```foreman start``` to run the application locally. You must restart whenever you make changes to content.yml.
+
+###Step 7: Push to Heroku
 Commit your changes, then run ```heroku create```, and ```git push heroku master```.
